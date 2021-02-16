@@ -108,9 +108,27 @@
 				</div>
 			</div>
 			<div class="tablet-greybg"></div>
-			<div class="example__slider--desktop">		
+			<div class="example__slider--desktop">	
+				<div class="img-comp-container">
+					<div class="img-comp-img">
+						<picture>
+							<source media="(min-width: 1440px)" srcset="img/before-desktop.jpg">
+							<source media="(min-width: 768px)" srcset="img/before-tablet.jpg">
+							<img src="img/before-mobile.jpg">
+						</picture>
+					</div>
+					<div class="img-comp-img img-comp-overlay">
+						<picture>
+							<source media="(min-width: 1440px)" srcset="img/after-desktop.jpg">
+							<source media="(min-width: 768px)" srcset="img/after-tablet.jpg">
+							<img src="img/after-mobile.jpg">
+						</picture>
+					</div>
+				</div>	
+				<!--
 				<div class="example__img example__img--was"></div>
 				<div class="example__img example__img--after"></div>
+				-->
 				<div class="example__changes example__changes--flex">
 					<span class="example__legend example__was">Было</span>
 					<div class="example__range outer-bar">
@@ -155,6 +173,11 @@
 			<a class="copyright__logo" href="#"></a>
 		</div>
 	</footer>
+
+		
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/compareImages.js"></script>
 <script src="js/popup.js"></script>
 </body>
 </html>
